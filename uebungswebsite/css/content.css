@@ -13,10 +13,10 @@ content.css
 
 .site-content a[href^="http"]::after { content: " \2197"; }
 
-.site-content a:link { color: #0b74b8; } 
-.site-content a:visited { color: #36aade; } 
-.site-content a:hover, .site-content a:focus { color: #f5662e; }
-.site-content a:active { color: #d90000; }
+.site-content a:link { color: #07b; } 
+.site-content a:visited { color: #3ad; } 
+.site-content a:hover, .site-content a:focus { color: #f62; }
+.site-content a:active { color: #d00; }
 
 
 /** 
@@ -61,7 +61,7 @@ content.css
   box-shadow: 0 1px 3px rgb(51,51,51,0.3); 
   
   padding: 1rem;
-  border-left: 5px solid #0b74b8; 
+  border-left: 5px solid #07b; 
   margin: 0; 
   margin-bottom: 1rem; 
 }
@@ -147,7 +147,7 @@ content.css
 }
 
 .mitglied h3 { 
-  background: #0b74b8; 
+  background: #07b; 
   color: white; 
   font-size: 1.25rem;
   padding: 1rem; 
