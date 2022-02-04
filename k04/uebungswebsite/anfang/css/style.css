@@ -1,0 +1,13 @@
+/* Stylesheet für die Übungswebsite aus ″Einstieg in HTML + CSS″ */ 
+
+body {
+    background-color: floralwhite; 
+    color: white; 
+  }
+
+  header {
+      background-color: steelblue;
+      color: white;
+      padding: 1rem; 
+  }
+  
