@@ -1,0 +1,41 @@
+/* Stylesheet für die Übungswebsite aus ″Einstieg in HTML + CSS″ */ 
+
+
+/* Grundlegende Gestaltung für die Navigation */ 
+nav li { 
+    display: inline; 
+    margin-right: 0.5rem; 
+  }
+nav { 
+    background-color: black;
+    color: white; 
+    padding: 0.5rem;
+    margin: 1rem 0; 
+}
+nav ul {
+    padding: 0; 
+    margin: 0; 
+  }
+nav a {
+    color: white; 
+    text-decoration: none; 
+}
+
+/* Grundlegende Gestaltung für den Footer */         
+footer {
+    background-color: black;
+    color: white; 
+    text-align: right; 
+    padding: 0.5rem;
+  }
+footer a {
+    color: white; 
+    text-decoration: none; 
+}
+
+/* Sanftes Scrollen aktivieren */ 
+html { 
+    scroll-behavior: smooth; 
+}
+  
+  
