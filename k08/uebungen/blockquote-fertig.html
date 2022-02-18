@@ -7,14 +7,18 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1"> 
   
-  <title>blockquote und cite - Einstieg in HTML + CSS</title>
+  <title>Zitat mit Quellenangabe - Einstieg in HTML + CSS</title>
   
   <style>
     
-    blockquote {	
+    /* Grundlegende Gestaltung für ein Zitat mit Quellenangabe */ 
+    .zitat {	
       background-color: whitesmoke;	
       padding: 1rem;	
       border-left: 5px solid steelblue; 
+      margin: 0; 
+    }
+    blockquote {
       margin: 0; 
     }
 
@@ -26,13 +30,20 @@
 
   <h1>Zitate erstellen</h1>
 
-  <blockquote>
-    <p>I like deadlines. I like the whooshing sound they make when they go by.</p>
-    <footer>
+  <figure class="zitat">
+    
+    <blockquote>
+     <p>I like deadlines. I like the whooshing sound they make when they go by.</p>
+    </blockquote>
+    
+    <figcaption>
       &mdash; Douglas Adams, 
-      <cite><a href="https://www.goodreads.com/quotes/731870" target="_blank" rel="noreferrer noopener">The Salmon of Doubt</a></cite>
-    </footer>
-  </blockquote>
+      <cite>
+        <a href="https://goodreads.com/quotes/731870">The Salmon of Doubt</a>
+      </cite>
+    </figcaption>
+  
+  </figure>  
 
 </body>  
 </html>
