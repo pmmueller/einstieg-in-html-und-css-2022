@@ -13,6 +13,9 @@ basiert auf der fertigen [Übungswebsite aus 2020](https://github.com/pmmueller/
   #36aade to #3ad Logo hellblau 
   #f5662e to #f62 Logo orange 
 
+2022-02-23 
+- news.html - Inhalte von aside.linklisten aktualisiert 
+
 2Decide
 - Navigation: .current a ist hellgrau #666. Vielleicht besser in Blau #07b?
 - 

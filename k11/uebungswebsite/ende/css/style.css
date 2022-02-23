@@ -1,0 +1,103 @@
+/* Stylesheet für die Übungswebsite aus ″Einstieg in HTML + CSS″ */ 
+
+/* Fine-Tuning: Die Abstände um Logo und Slogan anpassen */ 
+.site-header h1 { 
+  margin-bottom: 0; 
+}
+.site-header p {
+  margin-top: 0; 
+}
+
+/* Grundlegende Gestaltung für die Navigation */ 
+.site-nav li { 
+    display: inline; 
+    margin-right: 0.5rem; 
+  }
+.site-nav { 
+    background-color: black;
+    color: white; 
+    padding: 0.5rem;
+    margin: 1rem 0; 
+}
+.site-nav ul {
+    padding: 0; 
+    margin: 0; 
+  }
+.site-nav a {
+    color: white; 
+    text-decoration: none; 
+}
+
+.current a { 
+  text-decoration: underline; 
+}
+
+/* Grundlegende Gestaltung für den Footer */ 
+.site-footer {
+    background-color: black;
+    color: white; 
+    text-align: right; 
+    padding: 0.5rem;
+  }
+
+.footer-nav ul {
+  margin: 0; 
+}
+.footer-nav li {
+  display: inline;
+  margin-right: 0.5rem;
+}
+.site-footer a {
+  color: white; 
+  text-decoration: none; 
+}
+
+
+/* Sanftes Scrollen aktivieren */ 
+html { 
+    scroll-behavior: smooth; 
+}
+  
+/* Grundlegende Gestaltung für den Abschnitt mit den Infoboxen */ 
+.infoboxen {
+  background-color: whitesmoke; 
+  padding: 1rem; 
+  margin-bottom: 1rem; 
+}
+.infobox {
+  text-align: center; 
+  background-color: white; 
+  padding: 1rem;
+  margin: 1rem; 
+}
+
+/* Grundlegende Gestaltung der Inhalte auf der Seite News */ 
+.beitragsliste h3, .linklisten h3 {
+  padding-top: 0.5rem; 
+  border-top: 1px solid whitesmoke; 
+  margin-bottom: 0.25rem; 
+}
+
+.beitragsliste article, .linklisten section { margin-bottom: 3rem; }
+.beitragsinfo { color: gray; }
+
+/* Kontaktadresse nicht kursiv */
+address { font-style: normal; }
+
+/* Grundlegende Gestaltung für das Kontaktformular */ 
+.kontaktformular form {
+  max-width: 500px; 
+  background-color: whitesmoke; 
+  padding: 1rem; 
+}
+.kontaktformular div { margin-bottom: 1rem; }
+.kontaktformular label { cursor: pointer; } 
+.kontaktformular label[for] { display: block; }
+.kontaktformular button {
+  background-color: gray;
+  color: white; 
+  padding: 0.5rem; 
+  border: none; 
+  font-size: inherit; 
+  cursor: pointer; 
+} 
