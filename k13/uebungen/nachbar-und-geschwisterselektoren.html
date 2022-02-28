@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title>Geschwisterselektoren – Einführung in HTML + CSS</title>
+    <title>Nachbar- und Geschwisterselektoren – Einführung in HTML + CSS</title>
     
     <!-- CSS für diese Übungsseite --> 
     <style>
@@ -13,7 +13,8 @@
       body {
         font-family: sans-serif; 
         line-height: 1.7; 
-        max-width: 60ch; 
+        max-width: 80ch; 
+        padding: 1rem;
         margin: 0 auto; 
       }
     
@@ -41,13 +42,15 @@
   <body>
   
     <header>
-      <h1>Geschwisterselektoren</h1> 
-      <p class="teaser">Diesen Absatz finden beide Geschwisterselektoren nicht.</p>
+      <h1>Nachbar- und Geschwisterselektoren</h1> 
+      <p class="teaser">Diesen Absatz finden beide Selektoren nicht.</p>
     </header>
 
-    <p>Diesen Absatz finden beide Selektoren. Darum hat er links und rechts eine Rahmenlinie. Die linke kommt vom Selektor mit dem Pluszeichen <code>+</code>, die rechte vom Selektor mit der Tilde <code>~</code>.  </p> 
+    <p>Diesen Absatz finden beide Selektoren. Darum hat er links <em>und</em> rechts eine Rahmenlinie. Die linke kommt vom Selektor mit dem Pluszeichen <code>+</code>, die rechte vom Selektor mit der Tilde <code>~</code>.  </p> 
 
-    <p>Diesen Absatz findet nur der Selektor mit der Tilde <code>~</code>. Darum hat er nur rechts eine Rahmenlinie. Der Selektor mit dem Pluszeichen <code>+</code> findet den Absatz nicht, weil er nur benachbarte Geschwister auswählt. </p> 
+    <p>Diesen Absatz findet nur der Selektor mit der Tilde <code>~</code>. Darum hat er nur rechts eine Rahmenlinie. </p> 
+
+    <p>Auch diesen Absatz findet nur der Selektor mit der Tilde <code>~</code>. Darum hat er nur rechts eine Rahmenlinie.</p> 
 
   </body>
 

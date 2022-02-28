@@ -5,14 +5,16 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     
-    <title>Die Pseudoklasse :last-child – Einführung in HTML + CSS</title>
+    <title>Der Nachbarselektor + – Einführung in HTML + CSS</title>
     
     <!-- CSS für diese Übungsseite --> 
     <style>
   
       body {
         font-family: sans-serif; 
+        line-height: 1.7;
         max-width: 60ch; 
+        padding: 1rem; 
         margin: 0 auto; 
       }
       
@@ -27,11 +29,10 @@
         display: inline;
         padding-right: 0.5rem;
         padding-left: 0.5rem; 
-        border-right: 1px solid #333; 
       } 
     
-      nav li:last-child { 
-        border-right: none; 
+      nav li + li { 
+        border-left: 1px solid #333; 
       } 
     
     </style>
