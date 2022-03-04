@@ -1,10 +1,24 @@
 /* Stylesheet für die Übungswebsite aus ″Einstieg in HTML + CSS″ */ 
 
-/* Die Systemschrift des Geräts */
+/* border-box aktivieren */ 
+*, *::before, *::after { box-sizing: border-box; }
+
+/* Hintergrundfarbe für das Stammelement */ 
+html { background-color: whitesmoke; }
+
+/* Grundlegende Gestaltung für body */
 body {
   font-family: system-ui, -apple-system, "Segoe UI", Roboto, 
                "Helvetica Neue", Arial, sans-serif;
-  font-size: 1rem;                
+  font-size: 1rem;             
+
+  /* Hintergrundfarbe und Begrenzung der Breite */ 
+  background-color: white; 
+  min-width: 320px; 
+  max-width: 600px; 
+
+  /* Horizontal zentrieren */ 
+  margin: 0.25rem auto;   
 }
 
 /* Überschriften mit deutlicher Hierarchie */ 
@@ -17,6 +31,13 @@ h6 { font-size: 1rem; }
 
 /* Überschriften etwas weniger fett */ 
 h1, h2, h3, h4 { font-weight: 500; } 
+
+/* margin collapsing vermeiden */ 
+h1, h2, h3, h4, h5, h6,
+p, ul, ol, blockquote {
+  margin-top: 0; 
+}
+
 
 /* Unterstreichung für Hyperlinks gestalten */ 
 a {
@@ -52,7 +73,6 @@ a {
     background-color: #333;
     color: white; 
     padding: 0.5rem;
-    margin: 1rem 0; 
 }
 .site-nav ul {
     padding: 0; 
@@ -141,3 +161,15 @@ address { font-style: normal; }
   font-size: inherit; 
   cursor: pointer; 
 } 
+
+
+/* Innenabstände für die Layoutbereiche */ 
+.site-header { padding: 1rem 1rem 0 1rem; } 
+.site-nav { padding: 0.5rem 1rem; } 
+.site-content { padding: 0 1rem; } 
+.site-footer { padding: 0.5rem 1rem; }
+
+/* Vertikale Außenabstände für die Layoutbereiche */ 
+.site-header { margin-bottom: 1rem; } 
+.site-nav { margin-bottom: 2rem; } 	
+.site-content { margin-bottom: 2rem; } 

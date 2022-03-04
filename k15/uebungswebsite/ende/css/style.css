@@ -1,6 +1,6 @@
 /* Stylesheet für die Übungswebsite aus ″Einstieg in HTML + CSS″ */ 
 
-/* Die Systemschrift des Geräts */
+/* Grundlegende Gestaltung für body */
 body {
   font-family: system-ui, -apple-system, "Segoe UI", Roboto, 
                "Helvetica Neue", Arial, sans-serif;
