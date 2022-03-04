@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     
-    <title>Der Nachbarselektor + – Einführung in HTML + CSS</title>
+    <title>Die Pseudoklasse :first-child – Einführung in HTML + CSS</title>
     
     <!-- CSS für diese Übungsseite --> 
     <style>
@@ -25,16 +25,19 @@
         padding: 0; 
         margin: 0; 
       }
-      nav li { 
+      nav > li { 
         display: inline;
         padding-right: 0.5rem;
         padding-left: 0.5rem; 
-      } 
-    
-      nav li + li { 
+        /* Rahmenlinie links */ 
         border-left: 1px solid #333; 
       } 
     
+      /* Das erste li ohne Rahmenlinie links */ 
+      nav > li:first-child { 
+        border-left: none; 
+      } 
+      
     </style>
     
 

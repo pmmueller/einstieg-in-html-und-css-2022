@@ -1,5 +1,40 @@
 /* Stylesheet für die Übungswebsite aus ″Einstieg in HTML + CSS″ */ 
 
+/* Die Systemschrift des Geräts */
+body {
+  font-family: system-ui, -apple-system, "Segoe UI", Roboto, 
+               "Helvetica Neue", Arial, sans-serif;
+  font-size: 1rem;                
+}
+
+/* Überschriften mit deutlicher Hierarchie */ 
+h1 { font-size: 2.5rem; } 
+h2 { font-size: 2rem; } 
+h3 { font-size: 1.75rem; } 
+h4 { font-size: 1.5rem; }
+h5 { font-size: 1.25rem; }
+h6 { font-size: 1rem; } 
+
+/* Überschriften etwas weniger fett */ 
+h1, h2, h3, h4 { font-weight: 500; } 
+
+/* Unterstreichung für Hyperlinks gestalten */ 
+a {
+  text-decoration-thickness: 1px;
+  text-underline-offset: 0.1875em; 
+}
+
+/* Hyperlinks im Inhaltsbereich gestalten */
+.site-content a:link { color: #07b; } 
+.site-content a:visited { color: #3ad; } 
+.site-content a:hover, .site-content a:focus { color: #f63; } 
+.site-content a:active { color: #ec3; }  
+
+/* Externe Hyperlinks kennzeichnen */
+/* .site-content a[href^="http"]::after { content: " (in neuem Tab oder Fenster)"; }  */
+.site-content a[href^="http"]::after { content: " \2197"; }
+/* .site-content a[target="_blank"]::after { content: " \2197"; } */
+
 /* Fine-Tuning: Die Abstände um Logo und Slogan anpassen */ 
 .site-header h1 { 
   margin-bottom: 0; 
@@ -34,6 +69,7 @@
 
 /* Grundlegende Gestaltung für den Footer */ 
 .site-footer {
+    font-size: smaller; 
     background-color: #333;
     color: white; 
     text-align: right; 
@@ -57,7 +93,11 @@
 html { 
     scroll-behavior: smooth; 
 }
-  
+
+/* Zeilenabstand für den Inhaltsbereich erhöhen */ 
+.site-content { line-height: 1.5; } 
+
+
 /* Grundlegende Gestaltung für den Abschnitt mit den Infoboxen */ 
 .infoboxen {
   background-color: #eee; 

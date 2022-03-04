@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="de" >
+<head>
+  <meta charset="UTF-8">
+  <title>Listen: Aufzählungszeichen gestalten mit list-style - Einstieg in HTML + CSS</title>
+
+  <style>
+    body { 
+      font-family: sans-serif; 
+      line-height: 1.5; 
+      max-width: 60ch;
+      padding: 1rem 3rem; 
+      margin: 0 auto; 
+    }
+    
+    li:nth-child(1) { list-style: disc; }
+    li:nth-child(2) { list-style: circle; }
+    li:nth-child(3) { list-style: square; }
+    li:nth-child(4) { list-style: none; }
+    li:nth-child(5) { list-style: "\2014\00A0"; }
+    li:nth-child(6) { list-style: "\2192\00A0"; }
+    li:nth-child(7) { list-style: "\2713\00A0"; }
+    
+  </style>
+
+</head>
+<body>
+
+<h2>Listen: Aufzählungszeichen gestalten</h2>
+
+<ul>
+  <li>mit disc </li>
+  <li>mit circle</li>
+  <li>mit square</li>
+  <li>ohne Aufzählungszeichen</li>
+  <li>mit EM-Dash</li>
+  <li>mit Pfeil nach rechts</li>
+  <li>mit Häkchen</li>
+</ul>
+
+<p>Unicode-Zeichen findet man z. B. auf <a href="https://unicode-table.com" target="_blank" rel="noopen noreferrer">unicode-table.com</a>. </p>
+  
+</body>
+</html>

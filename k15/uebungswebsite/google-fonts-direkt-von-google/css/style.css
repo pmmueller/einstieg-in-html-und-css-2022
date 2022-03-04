@@ -1,5 +1,10 @@
 /* Stylesheet für die Übungswebsite aus ″Einstieg in HTML + CSS″ */ 
 
+/* Schrift Source Sans Pro (Google Font) */
+body {
+  font-family: "Source Sans Pro", "Helvetica Neue", Arial, sans-serif;
+}
+
 /* Fine-Tuning: Die Abstände um Logo und Slogan anpassen */ 
 .site-header h1 { 
   margin-bottom: 0; 
