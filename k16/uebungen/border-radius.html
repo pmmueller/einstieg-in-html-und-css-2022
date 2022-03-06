@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="de">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <title>Rahmenlinien gestalten mit border-radius - Einstieg in HTML + CSS</title>
+
+        <style>
+
+            body {
+                display: grid;
+                grid-template-columns: repeat(2, 1fr);
+                gap: 2rem; 
+
+                font-family: sans-serif;
+                padding: 2rem; 
+                margin: 0 auto; 
+            }
+
+            div {
+                background-color: lightsteelblue;
+                padding: 2rem 1rem;                 
+            }
+
+            .rahmenlinie { border: 0.5rem solid steelblue; }
+            .gleich { border-radius: 1rem; }
+            .verschieden { border-radius: 4px 48px 4px 48px; }
+
+        </style>
+
+    </head>
+    <body>
+
+        <div class="rahmenlinie gleich">Diese Box hat gleiche Ecken</div>
+        <div class="gleich">Diese Box hat gleiche Ecken</div>
+
+        <div class="rahmenlinie verschieden">Diese Box hat unterschiedliche Ecken</div>
+        <div class="verschieden">Diese Box hat unterschiedliche Ecken</div>
+
+    </body>
+</html>
