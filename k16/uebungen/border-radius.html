@@ -8,6 +8,8 @@
 
         <style>
 
+            * { box-sizing: border-box; }
+
             body {
                 display: grid;
                 grid-template-columns: repeat(2, 1fr);
@@ -20,23 +22,33 @@
 
             div {
                 background-color: lightsteelblue;
-                padding: 2rem 1rem;                 
+                padding: 2rem 1rem;    
+                /* vertikale Zentrierung */ 
+                display: flex;
+                align-self: center;             
+            }
+            code {
+                font-family: 'Courier New', Courier, monospace;
+                font-size: 1rem;
             }
 
             .rahmenlinie { border: 0.5rem solid steelblue; }
             .gleich { border-radius: 1rem; }
-            .verschieden { border-radius: 4px 48px 4px 48px; }
+            /* links oben, rechts oben, rechts unten und links unten */ 
+            .verschieden { border-radius: 4px 96px 24px 48px; }
 
         </style>
 
     </head>
     <body>
 
-        <div class="rahmenlinie gleich">Diese Box hat gleiche Ecken</div>
-        <div class="gleich">Diese Box hat gleiche Ecken</div>
+        <div class="rahmenlinie gleich">
+            <code>border-radius: 1rem</code>
+        </div>
+        <div class="gleich"><code>border-radius: 1rem</code></div>
 
-        <div class="rahmenlinie verschieden">Diese Box hat unterschiedliche Ecken</div>
-        <div class="verschieden">Diese Box hat unterschiedliche Ecken</div>
+        <div class="rahmenlinie verschieden"><code>border-radius: 4px 96px 24px 48px</code></div>
+        <div class="verschieden"><code>border-radius: 4px 96px 24px 48px</code></div>
 
     </body>
 </html>
