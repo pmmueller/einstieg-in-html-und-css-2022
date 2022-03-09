@@ -25,6 +25,11 @@ body {
   padding: 0 1rem; 
   margin: 0 auto; 
 }
+
+/* Abstände der Infoboxen korrigieren - .inside erhöht Spezifität */ 
+.inside .infoboxen { padding: 1rem 0; } 
+.inside .infobox { margin: 1rem 0; }
+
 .site-header, .site-nav, .site-content, .site-footer { 
   padding-left: 0; 
   padding-right: 0; 

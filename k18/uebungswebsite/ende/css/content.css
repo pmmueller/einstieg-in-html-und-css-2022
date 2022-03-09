@@ -35,16 +35,14 @@
   */
 .infoboxen {
     background-color: #eee; 
-    /* Modernes Layout = padding li/re auf 0 */
-    padding: 1rem 0; 
+    padding: 1rem; 
     margin-bottom: 1rem; 
   }
   .infobox {
     text-align: center; 
     background-color: white; 
     padding: 1rem;
-    /* Modernes Layout = margin li/re auf 0 */
-    margin: 1rem 0; 
+    margin: 1rem; 
   }  
 
 /** 
