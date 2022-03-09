@@ -32,7 +32,7 @@ h6 { font-size: 1rem; }
 /* Überschriften etwas weniger fett */ 
 h1, h2, h3, h4 { font-weight: 500; } 
 
-/* margin collapsing vermeiden */ 
+/* Collapsing Margins vermeiden */ 
 h1, h2, h3, h4, h5, h6,
 p, ul, ol, blockquote {
   margin-top: 0; 
