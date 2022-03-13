@@ -1,0 +1,41 @@
+/*  ==========================================
+    Einstieg in HTML und CSS  
+    Stylesheet für die Übungswebsite 
+
+    forms.css  
+    wird in style.css per @import eingebunden  
+
+    Stylesheet zur Gestaltung der Interaktion mit dem Benutzer 
+
+    ======================================= */
+
+/** 
+  * Kontaktformular 
+  */ 
+.kontaktformular form {
+    max-width: 500px; 
+    background-color: #eee; 
+    padding: 1rem; 
+}
+
+/* Abstände zwischen den Zeilen */
+.kontaktformular div { margin-bottom: 1rem; }
+
+/* Beschriftung */
+.kontaktformular label { cursor: pointer; } 
+.kontaktformular label[for] { display: block; }
+
+/* Button zum Verschicken */
+.kontaktformular button {
+    background-color: #07b;
+    color: white; 
+    padding: 0.5rem; 
+    border: none; 
+    font-size: inherit; 
+    cursor: pointer; 
+} 
+
+
+/** 
+  * Ende forms.css 
+  */     
