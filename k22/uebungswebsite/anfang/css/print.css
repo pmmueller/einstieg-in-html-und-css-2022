@@ -1,0 +1,26 @@
+/*  ==========================================
+    Einstieg in HTML und CSS  
+    Stylesheet für die Übungswebsite 
+
+    print.css  
+    wird in style.css per @import eingebunden  
+
+    Einfache Druckversion für die Übungswebsite 
+    ======================================= */
+
+@media print {
+    * { 
+      box-shadow: none !important; 
+      text-shadow: none !important; 
+    } 
+  
+    html { background-color: white; color black; } 
+  
+    .site-nav, .site-footer { display: none; }
+  
+  } /* Ende @media */
+
+
+/** 
+  * Ende print.css 
+  */ 
