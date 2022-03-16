@@ -1,0 +1,54 @@
+/*  ==========================================
+    Einstieg in HTML und CSS  
+    Stylesheet für die Übungswebsite 
+
+    navi-responsiv.css  
+    wird in style.css per @import eingebunden  
+
+    Stylesheet zur Gestaltung der Site-Navigation
+    Die Navigation basiert dabei auf dem Prinzip des Progressive Enhancement: 
+
+    1. In schmalen Viewports ohne JS
+    - Die Navigationsliste erscheint mit der grundlegenden Gestaltung. 
+    - Der Menübutton wird mit .no-js ausgeblendet. 
+
+    2. In schmalen Viewports mit JS 
+    - ist nur der Menübutton zu sehen. 
+    - Die Navigationsliste wird durch Antippen/Anklicken eingeblendet 
+
+    3. In Viewports > 600px 
+    - Die Navigationsliste wird horizontal dargestellt.
+    - JavaScript spielt hierbei keine Rolle. 
+
+    ======================================= */
+
+.site-nav { 
+    position: static; 
+    padding: 0; 
+}   
+.site-nav ul {
+    display: flex; 
+    flex-flow: column; 
+    list-style: none; 
+    padding: 0; margin: 0; 
+}
+.site-nav a {
+    display: block; 
+    text-decoration: none; 
+    background: #333; 
+    color: white;
+    padding: 0.5rem 1rem;
+    margin-right: -1rem;
+}
+
+.site-nav a:hover, 
+.site-nav a:focus { 
+    background: #0b74b8; 
+    color: white; 
+} 
+.current a { 
+    background: #666; 
+    color: white; 
+}
+  
+      
