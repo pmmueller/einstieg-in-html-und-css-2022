@@ -6,49 +6,154 @@
     wird in style.css per @import eingebunden  
 
     Stylesheet zur Gestaltung der Site-Navigation
-    Die Navigation basiert dabei auf dem Prinzip des Progressive Enhancement: 
+    
+    Die Navigation basiert dabei auf dem Prinzip des *Progressive Enhancement*: 
+    Ohne JavaScript funktioniert alles, mit ist es besser. 
 
-    1. In schmalen Viewports ohne JS
-    - Die Navigationsliste erscheint mit der grundlegenden Gestaltung. 
-    - Der Menübutton wird mit .no-js ausgeblendet. 
+    1. Navigation in schmalen Viewports *ohne* JS
+       - Vertikale Navigation mit grundlegender Gestaltung. 
+       - Menübutton wird mit der Klasse .no-js ausgeblendet. 
 
-    2. In schmalen Viewports mit JS 
-    - ist nur der Menübutton zu sehen. 
-    - Die Navigationsliste wird durch Antippen/Anklicken eingeblendet 
+    2. Navigation in schmalen Viewports *mit* JS 
+       - Nur der Menübutton ist zu sehen. 
+       - Navigationsliste wird durch Antippen/Anklicken des Buttons eingeblendet 
 
-    3. In Viewports > 600px 
-    - Die Navigationsliste wird horizontal dargestellt.
-    - JavaScript spielt hierbei keine Rolle. 
+    3. Navigation in Viewports > 600px 
+       - Navigationsliste wird horizontal dargestellt.
+       - JavaScript spielt für die Navigation keine Rolle. 
 
     ======================================= */
 
+/** 
+  * Mobile First 
+  * Gestaltung der Navigation in einem schmalen Viewport 
+  */ 
+
 .site-nav { 
-    position: static; 
-    padding: 0; 
-}   
+    background-color: #333;
+    color: white; 
+    box-shadow: 0 2px 6px rgb(51,51,51,0.3); 
+    margin-bottom: 2rem; 
+} 
+
+.site-nav .inside {
+    padding: 0;
+}
 .site-nav ul {
     display: flex; 
     flex-flow: column; 
     list-style: none; 
-    padding: 0; margin: 0; 
+    padding: 0; 
+    margin: 0; 
 }
+
 .site-nav a {
     display: block; 
     text-decoration: none; 
     background: #333; 
     color: white;
     padding: 0.5rem 1rem;
-    margin-right: -1rem;
 }
 
 .site-nav a:hover, 
 .site-nav a:focus { 
-    background: #0b74b8; 
+    background: #07b; 
     color: white; 
-} 
+}
 .current a { 
     background: #666; 
     color: white; 
+    text-decoration: underline;
+}
+
+
+/** 
+  * Kein JavaScript? Menübutton ausblenden  
+  */ 
+.no-js .menubutton { display: none; }
+
+
+/** 
+* Wenn JavaScript aktiviert ist:  
+* - Menübutton gestalten 
+* - Burger-Symbol einbauen 
+*/ 
+.js .menubutton { 
+    display: flex; 
+    align-items: center; 
+    
+    cursor: pointer;
+    background: inherit; 
+    color: white;
+    font: inherit; 
+    text-align: center; 
+    
+    padding: 0.5rem 1rem; 
+    border: 0; 
+    margin: 0; 
+}
+
+.js .menubutton::before {
+    content: url(../bilder/menuburger.svg); 
+    width: 1rem; 
+    height: 1rem; 
+    margin-right: 0.25rem; 
 }
   
-      
+
+/**
+  * Navigationsliste ausblenden 
+  */
+.js .site-nav ul {
+    max-height: 0; 
+    overflow: hidden; 
+} 
+
+/**
+  * Navigationsliste einblenden 
+  * Klick/Druck auf den Button fügt im HTML .showmenu hinzu 
+  */    
+.js .showmenu + ul {
+    max-height: 100rem; 
+    transition: max-height 0.5s ease-in-out;  
+    overflow: auto; 
+} 
+.js .showmenu.menubutton::before {
+    content: url(../bilder/menuclose.svg); 
+}    
+  
+/**
+  * Horizontale Navigation für breitere Viewports  
+  */
+@media screen and (min-width: 600px) {
+    .menubutton { 
+        display: none !important; 
+    } 
+    .site-nav { 
+        position: sticky; 
+        top: 0; 
+    } 
+    .site-nav .inside {
+        padding: 0 1rem; 
+    }
+    .site-nav ul { 
+        max-height: none !important; 
+        flex-flow: row; 
+        padding: 0; 
+    }
+    .site-nav li {
+        flex: 1; 
+        max-width: 10rem; 
+        text-align: center; 
+        border-left: 1px solid #eee; 
+    }
+    .site-nav li:last-child { 
+        border-right: 1px solid #eee; 
+    }
+
+} /* Ende @media */
+
+
+/** 
+  * Ende navi-reponsiv.css 
+  */ 
