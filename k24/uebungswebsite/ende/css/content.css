@@ -73,9 +73,8 @@
     grid-template-columns: 1fr 1fr;
     grid-gap: 1rem;
   }
-  .kundenstimmen h2 { 
+  .kundenstimmen h2:first-child { 
     grid-column: 1/3; 
-    /* grid-column: span 2; */
   }  
 } /* Ende @media */ 
     
@@ -103,18 +102,18 @@
   * Inhalte auf der Seite News 
   */ 
 @media screen and (min-width: 600px) {
-  .seite-news .site-content .inside {
+  .seite-news .site-content > .inside {
     display: grid; 
     grid-template-columns: 2fr 1fr; 
     grid-column-gap: 3rem; 
     grid-row-gap: 1rem; 
     grid-template-areas: 
       "intro intro"
-      "inhalt sidebar";
+      "beitragsliste sidebar";
   } 
 
   .seite-news .content-intro { grid-area: intro; } 
-  .seite-news .beitragsliste { grid-area: inhalt; } 
+  .seite-news .beitragsliste { grid-area: beitragsliste; } 
   .seite-news .linklisten    { grid-area: sidebar; } 
 
 } /* Ende @media */
