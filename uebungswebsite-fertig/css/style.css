@@ -1,29 +1,37 @@
-/* ================================
+/** ====================================================
+    Einstieg in HTML und CSS 
+    Stylesheet für die Übungswebsite    
 
-   style.css  
+    style.css 
+    - zentrales Stylesheet zum Importieren der Module 
+    - wird in den HTML-Dateien per <link> eingebunden 
 
-   zentrales Stylesheet
-   wird im HTML per <link> eingebunden 
-   
-   Stand k25/uebungswebsite/fertig/ 
+===================================================== */
 
-   ================================ */
-
+/* Modul mit den grundlegenden Einstellungen */
 @import url("basis.css"); 
 
+/* Modul für klassisches Layout  */
 @import url("layout.css"); 
 
+/* Modernes Layout. Auskommentieren = klassisches Layout */
 @import url("layout-modern.css"); 
 
-@import url("navi-responsiv.css"); 
+/* Modul für einfache Inline-Navigation */
+/* @import url("navi-inline.css");  */
 
-@import url("navi-meta.css"); 
+/* Modul für eine responsive Navigation */
+@import url("navi-responsiv.css");
 
+/* Modul zur Gestaltung der Inhalte in <main> */
 @import url("content.css"); 
 
-@import url("formulare.css"); 
+/* Modul für Kontaktformular und andere Interaktionen */
+@import url("forms.css"); 
 
+/* Modul für eine einfache Druckversion */ 
 @import url("print.css"); 
 
-
-/* eof */
+/** 
+  * Ende style.css 
+  */ 
