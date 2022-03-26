@@ -1,0 +1,54 @@
+/*  ==========================================
+    Einstieg in HTML und CSS  
+    Stylesheet für die Übungswebsite 
+
+    layout-modern.css  
+    wird in style.css per @import eingebunden  
+
+    Stylesheet zur Gestaltung der Layoutbereiche
+    - Mehrere farbige Abschnitte über die gesamte Seitenbreite  
+    - body reicht von ganz links bis ganz rechts 
+    - die Begrenzung der Breite erfolgt durch div.inside 
+
+    Die Gestaltung der Site-Navigation steht in eigenem Stylesheet. 
+
+    ======================================= */
+
+html { background-color: transparent; }
+body { 
+  display: flex;
+  flex-flow: column;
+  max-width: none; 
+  min-height: 100vh; 
+  padding: 0; 
+  margin: 0; 
+}
+
+.inside {
+  max-width: 600px; 
+  padding: 0 1rem; 
+  margin: 0 auto; 
+}
+
+@supports (display:grid) { 
+  .inside { 
+    max-width: 960px; 
+  }
+} 
+
+/* Abstände der Infoboxen korrigieren - .inside erhöht Spezifität */ 
+.inside .infoboxen { padding: 1rem 0; } 
+.inside .infobox { margin: 1rem 0; }
+
+.site-header, .site-nav, .site-content, .site-footer { 
+  padding-left: 0; 
+  padding-right: 0; 
+}
+
+.site-content {
+  flex: 1; 
+}
+
+/** 
+  * Ende layout-modern.css 
+  */ 

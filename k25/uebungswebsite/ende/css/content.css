@@ -57,7 +57,7 @@
     margin: 1rem; 
   }  
   
-  .infobox :last-child { 
+  .infobox p:last-child { 
     margin-top: auto; 
   } 
 
