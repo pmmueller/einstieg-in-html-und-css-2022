@@ -87,7 +87,7 @@ address { font-style: normal; }
 
 /* Grundlegende Gestaltung für das Kontaktformular */ 
 .kontaktformular form {
-  max-width: 500px; 
+  max-width: 580px; 
   background-color: #eee; 
   padding: 1rem; 
 }
