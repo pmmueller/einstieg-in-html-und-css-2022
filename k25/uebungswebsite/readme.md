@@ -1,5 +1,7 @@
-# k25/uebungswebsite/ende-ist-leer 
+# k25/uebungswebsite/ende-ist-absichtlich-leer 
 
-Im Kapitel wird beschrieben, wie man SVG-Icons einbaut. Diese Icons sind aber nicht Teil der Übungsdateien und daher wird der Stand der Übungswebsite am Ende des Kapitels hier auch nicht gespeichert, und der Ordner bleibt leer. 
+In Kapitel 25 wird beschrieben, wie man SVG-Icons einbaut. 
+
+Diese Icons sind nicht Teil der Übungsdateien, und daher wird der Stand der Übungswebsite am Ende des Kapitels hier nicht gespeichert, und der Ordner bleibt leer. 
 
 -- eof -- 
