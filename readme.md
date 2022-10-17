@@ -26,21 +26,21 @@ Vielen Dank an Leserin Rosalia Fischer, die diese Bugs gefunden hat.
 
 --    
 V1.3 (2022-09-25)
-ueber-uns.html 
+ueber-uns.html    
 Bei der Teamvorstellung wurde bei section die Klasse team ergänzt. 
 
 --    
 V1.2 (2022-09-24)
-Listing 18.29, Seite 390
+Listing 18.29, Seite 390    
 In layout-modern.css wurde an zwei Stellen die Klasse .inside 
 durch die Klasse .site-content ersetzt.  
 
 --    
 V1.1 (2022-09-09)     
-basis.css 
+basis.css     
 In Zeile 29 wurde nach max-width: 100% ein Komma gegen ein Semikolon ausgestauscht. 
 
 --    
 V1.0 (2022-06-20)
-
+    
 --- eof ---
