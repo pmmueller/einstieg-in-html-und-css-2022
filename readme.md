@@ -27,7 +27,7 @@ Vielen Dank an Leserin Rosalia Fischer, die diese Bugs gefunden hat.
 --    
 V1.3 (2022-09-25)
 ueber-uns.html 
-Bei der Teamvorstellung sollte es heißen <section class="team">. 
+Bei der Teamvorstellung wurde bei section die Klasse team ergänzt. 
 
 --    
 V1.2 (2022-09-24)
