@@ -13,15 +13,34 @@ ISBN 978-3-8362-9089-0
 https://html-und-css.de/buch/
 
 ## Stand
+V1.4 (2022-10-17)
+Ordner k06/uebungen  
+In audio-fertig.html und video-fertig.html fehlt bei den Pfadangaben jeweils
+der Ordnername audio bzw. video. 
+
+Datei k13/uebungen/navlist-first-child.html  
+Der Selektor für die Listenelemente li muss nav li heißen, ohne >. 
+Listenelemente können kein Kind von nav sein.  
+
+Vielen Dank an Leserin Rosalia Fischer, die diese Bugs gefunden hat.  
+
+--
 V1.3 (2022-09-25)
-Auf ueber-uns.html bei der Teamvorstellung => <section class="team">  
+ueber-uns.html 
+Bei der Teamvorstellung sollte es heißen <section class="team">. 
 
+--
 V1.2 (2022-09-24)
-In layout-modern.css wurde die Klasse .inside an zwei Stellen durch .site-content ersetzt (Listing 18.29, Seite 390) 
+Listing 18.29, Seite 390
+In layout-modern.css wurde an zwei Stellen die Klasse .inside 
+durch die Klasse .site-content ersetzt.  
 
+--
 V1.1 (2022-09-09)     
-In basis.css wurde in Zeile 29 nach max-width: 100% ein Komma gegen ein Semikolon ausgestauscht. 
+basis.css 
+In Zeile 29 wurde nach max-width: 100% ein Komma gegen ein Semikolon ausgestauscht. 
 
+--
 V1.0 (2022-06-20)
 
 --- eof ---
