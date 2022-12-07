@@ -15,11 +15,11 @@ https://html-und-css.de/buch/
 ## Stand
 --    
 V1.5 (2022-12-07)
-Listing 18.29, Seite 390    
-Kommentar präziser formuliert 
-Kurzschreibweise padding durch padding-right und padding-left ersetzt. 
-Kurzschreibweise margin durch margin-right und margin-left ersetzt. 
-
+Listing 18.29, Seite 390       
+Kommentar präziser formuliert     
+Kurzschreibweise padding durch padding-right und padding-left ersetzt.     
+Kurzschreibweise margin durch margin-right und margin-left ersetzt.     
+    
 --     
 V1.4 (2022-10-17)     
 Ordner k06/uebungen    
