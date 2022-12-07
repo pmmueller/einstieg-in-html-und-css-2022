@@ -24,6 +24,13 @@ Listenelemente können kein Kind von nav sein.
 
 Vielen Dank an Leserin Rosalia Fischer, die diese Bugs gefunden hat.  
 
+--
+V1.4 (2022-12-07)
+Listing 18.29, Seite 390    
+Kommentar präziser formuliert 
+Kurzschreibweise padding durch padding-right und padding-left ersetzt. 
+Kurzschreibweise margin durch margin-right und margin-left ersetzt. 
+
 --    
 V1.3 (2022-09-25)    
 ueber-uns.html    
