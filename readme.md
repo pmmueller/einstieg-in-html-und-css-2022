@@ -13,6 +13,14 @@ ISBN 978-3-8362-9089-0
 https://html-und-css.de/buch/
 
 ## Stand
+--
+V1.5 (2022-12-07)
+Listing 18.29, Seite 390    
+Kommentar präziser formuliert 
+Kurzschreibweise padding durch padding-right und padding-left ersetzt. 
+Kurzschreibweise margin durch margin-right und margin-left ersetzt. 
+
+--
 V1.4 (2022-10-17)     
 Ordner k06/uebungen    
 In audio-fertig.html und video-fertig.html fehlt bei den Pfadangaben jeweils
@@ -23,13 +31,6 @@ Der Selektor für die Listenelemente li muss nav li heißen, ohne >.
 Listenelemente können kein Kind von nav sein.  
 
 Vielen Dank an Leserin Rosalia Fischer, die diese Bugs gefunden hat.  
-
---
-V1.4 (2022-12-07)
-Listing 18.29, Seite 390    
-Kommentar präziser formuliert 
-Kurzschreibweise padding durch padding-right und padding-left ersetzt. 
-Kurzschreibweise margin durch margin-right und margin-left ersetzt. 
 
 --    
 V1.3 (2022-09-25)    
